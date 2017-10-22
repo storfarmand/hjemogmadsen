@@ -1,0 +1,57 @@
+* {
+    .lh-box-sizing(border-box);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../gfx/bg.jpg') top left repeat;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+.content {
+    max-width: @contentMaxWidth;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0;
+    margin: 10px auto;
+    section {
+        .clearfix();
+    }
+    .block-wrapper {
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 50% 100%;
+    }
+    .details {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding: 1%;
+        &-right {
+            padding: 1% 1% 1% 51%;
+        }
+        &-left {
+            padding: 1% 51% 1% 1%;
+        }
+        h3 {
+            font-family: 'Droid Serif', serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p {
+            padding: 3% 0;
+        }
+    }
+}

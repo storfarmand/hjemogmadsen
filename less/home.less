@@ -1,0 +1,159 @@
+.home.content {
+        section {
+            padding: 10px 10px 0 0;
+            article {
+                width: 49%;
+                float: left;
+                margin-left: 1%;
+                margin-bottom: 10px;
+                .block-wrapper {}
+                img {}
+            }
+        }
+        .block-wrapper {
+            height: 350px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: 50% 100%;
+            p {
+                    a, a:link, a:visited, a:hover, a:active {
+                        text-decoration: underline;
+                        color: black;
+                }
+            }
+        }
+        .treehouse .block-wrapper {
+            background-image: url(../gfx/treehouse.jpg);
+        }
+        .vinduer .block-wrapper {
+            background-image: url(../gfx/vinduer.jpg);
+        }
+        .telephone .block-wrapper {
+            background-image: url(../gfx/hardwood_floor.jpg);
+            background-size: cover;
+            .lh-display(flex);
+            .lh-flex-direction(column);
+            .lh-justify-content(space-around);
+            .lh-align-items(center);
+            .dots {
+                font-size: 120%;
+                color: rgba(228, 190, 70, 1);
+                letter-spacing: 15px;
+            }
+            .details {
+                font-family: 'FFF Tusj';
+                font-size: 220%;
+                text-align: center;
+                text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+            }
+            .highlight {
+                position: relative;
+                padding-left: 1%;
+                .lh-background-image(linear-gradient(to bottom, rgba(228, 190, 70, 1) 50%, rgba(163, 125, 8, 1) 100%));
+                .lh-border-radius(10px);
+                border: #000 solid 2px;
+                white-space: nowrap;
+                font-weight: bold;
+                i {
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+                .text-block {
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 120%;
+                    white-space: nowrap;
+                }
+                .ring {
+                    margin-right: 5px;
+                    font-size: 170%;
+                }
+                .number {
+                    font-size: 220%;
+                }
+                &:after {
+                    content: "";
+                    background: transparent url(../gfx/arrow.png) center center no-repeat;
+                    width: 49px;
+                    height: 51px;
+                    position: absolute;
+                    bottom: 110%;
+                    right: 25%;
+                }
+                @media handheld,
+                only screen and (max-width: 800px) {
+                    .lh-transform(scale(0.8));
+                }
+                @media handheld,
+                only screen and (max-width: 768px) {
+                    .lh-transform(scale(1.0));
+                }
+                @media handheld,
+                only screen and (max-width: 410px) {
+                    .lh-transform(scale(0.8));
+                }
+                @media handheld,
+                only screen and (max-width: 350px) {
+                    .lh-transform(scale(0.7));
+                }
+            }
+        }
+        .handy-man .block-wrapper {
+            h3 {
+                font-size: 30px;
+            }
+            ul {
+                margin-left: 20px;
+            }
+        }
+        .solar-roof .block-wrapper {
+            background-image: url(../gfx/solar_powered_roof.jpg);
+        }
+        .handy .block-wrapper {
+            background-image: url(../gfx/havearbejde.jpg);
+        }
+        .kitchen .block-wrapper {
+            background-image: url(../gfx/kitchen.jpg);
+        }
+        .google-maps .block-wrapper {
+            position: relative;
+            .krak-kort {
+              background: url(../gfx/krakkort.jpg) bottom center no-repeat;
+              background-size: cover;
+              height: 100%;
+              width: 50%;
+              position: absolute;
+              top: 0;
+              right: 0;
+              cursor: pointer;
+              a {
+                display: block;
+                height: 100%;
+                width: 100%;
+              }
+            }
+        }
+
+        @media handheld,
+        only screen and (min-width: 769px) and (max-width: 1024px) {
+            .block-wrapper {
+                height: 420px;
+            }
+        }
+        @media handheld,
+        only screen and (max-width: 768px) {
+            .block-wrapper {
+                height: auto;
+                min-height: 300px;
+            }
+            section {
+                article {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        @media handheld,
+        only screen and (max-width: 479px) {}
+}
